@@ -348,13 +348,14 @@
                     <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
                     <p class="subscribe__description">Subscribe to our newsletter and get a special 30% discount</p>
 
-                    <form action="" class="subscribe__form">
-                        <input type="text" placeholder="Enter email" class="subscribe__input">
+                    <form action="" class="subscribe__form" id="contact-form">
+                        <input type="email" placeholder="Enter email" class="subscribe__input" id="contact-user" name="user_email">
 
-                        <button class="button">
+                        <button type="submit" class="button">
                             Subscribe
                         </button>
                     </form>
+                    <p class="footer__message" id="contact-message"></p>
                 </div>
             </div>
         </section>
@@ -496,6 +497,8 @@
 </body>
         <!-- ----------------------- Scroll-reveal.js ----------------------- -->
     <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- ----------------------- Emailjs.js ----------------------- -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <!-- ----------------------- Swiper-bundle.js ----------------------- -->
     <script src="assets/js/swiper-bundle.min.js"></script>
         <!-- ----------------------- main.js ----------------------- -->
